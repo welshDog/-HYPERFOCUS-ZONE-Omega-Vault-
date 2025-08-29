@@ -1,0 +1,23 @@
+name: "CodeQL Configuration for Omega Vault"
+
+disable-default-queries: false
+
+queries:
+  - uses: security-and-quality
+  - uses: security-experimental
+
+paths-ignore:
+  - "**/*.md"
+  - "**/*.txt"
+  - "**/*.log"
+  - "**/node_modules/**"
+  - "**/__pycache__/**"
+  - "**/.git/**"
+
+paths:
+  - "**/*.py"
+  - "**/*.js"
+  - "**/*.ipynb"
+  - "**/*.json"
+  - "**/*.yml"
+  - "**/*.yaml"

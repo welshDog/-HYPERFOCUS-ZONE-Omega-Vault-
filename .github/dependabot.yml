@@ -1,0 +1,49 @@
+version: 2
+updates:
+  # Enable version updates for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "Mr-Lyndon-Williams"
+    assignees:
+      - "Mr-Lyndon-Williams"
+    commit-message:
+      prefix: "🔒 Security"
+      prefix-development: "🔧 Maintenance"
+      include: "scope"
+
+  # Enable version updates for Python packages (if any artifacts use pip)
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "Mr-Lyndon-Williams"
+    assignees:
+      - "Mr-Lyndon-Williams"
+    commit-message:
+      prefix: "🔒 Security"
+      prefix-development: "🔧 Maintenance"
+      include: "scope"
+
+  # Enable version updates for npm packages (if any artifacts use npm)
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "Mr-Lyndon-Williams"
+    assignees:
+      - "Mr-Lyndon-Williams"
+    commit-message:
+      prefix: "🔒 Security"
+      prefix-development: "🔧 Maintenance"
+      include: "scope"
